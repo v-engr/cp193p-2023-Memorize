@@ -21,7 +21,7 @@ class EmojiMemoryGame: ObservableObject {
     }
     
     @Published
-    private var model = MemoryGame(numberOfPairsOfCards: 4) { pairIndex in
+    private var model = MemoryGame(numberOfPairsOfCards: 10) { pairIndex in
         return emojis[pairIndex]
     }
     
